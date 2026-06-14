@@ -25,7 +25,7 @@ export function Nav() {
         scrolled ? "py-3" : "py-5"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-5xl px-6">
         <div
           className={`flex items-center justify-between rounded-full px-5 py-2.5 transition-all duration-500 ${
             scrolled ? "glass" : ""
@@ -51,7 +51,7 @@ export function Nav() {
               href="https://github.com/Phantom-TA"
               target="_blank"
               rel="noreferrer"
-              className="p-2.5 rounded-full border border-white/10 hover:border-[var(--glow)]/50 hover:bg-white/5 text-muted-foreground hover:text-foreground transition-all"
+              className="p-2.5 rounded-full border-none ring-1 ring-white/10 hover:ring-[var(--glow)]/50 hover:bg-white/5 text-muted-foreground hover:text-foreground transition-all"
               aria-label="GitHub"
             >
               <svg className="size-4 fill-current" viewBox="0 0 24 24">
@@ -62,7 +62,7 @@ export function Nav() {
               href="https://www.linkedin.com/in/tushar-agrawal-774885261/"
               target="_blank"
               rel="noreferrer"
-              className="p-2.5 rounded-full border border-white/10 hover:border-[var(--glow)]/50 hover:bg-white/5 text-muted-foreground hover:text-foreground transition-all"
+              className="p-2.5 rounded-full border-none ring-1 ring-white/10 hover:ring-[var(--glow)]/50 hover:bg-white/5 text-muted-foreground hover:text-foreground transition-all"
               aria-label="LinkedIn"
             >
               <svg className="size-4 fill-current" viewBox="0 0 24 24">

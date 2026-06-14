@@ -50,8 +50,8 @@ export function Hero() {
                 />
                 <span className="absolute -bottom-0.5 -right-0.5 size-4 rounded-full bg-[var(--success)] border-2 border-background animate-pulse-dot" />
               </div>
-              <h1 className="font-display text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.92] tracking-tight text-gradient">
-                Tushar <span className="italic text-foreground/70">Agrawal</span>
+              <h1 className="font-display text-[clamp(2.5rem,7vw,5.5rem)] font-bold tracking-tight text-white leading-[0.95]">
+                Tushar Agrawal
               </h1>
             </motion.div>
           </div>
@@ -61,7 +61,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed"
           >
-            CS undergrad at LNMIIT and <span className="text-foreground font-semibold">Software Engineer (AI) Intern</span> at <span className="text-foreground font-semibold">Voice Games</span>, building <span className="text-foreground font-semibold">autonomous multi-agent AI systems</span> and <span className="text-foreground font-semibold">full-stack systems</span>. Currently focused on developing intelligent workflows, retrieval pipelines, and developer tools that solve practical real-world problems.
+             <span className="text-foreground font-semibold">Software Engineer (AI) Intern</span> at <span className="text-foreground font-semibold">Voice Games</span>, building <span className="text-foreground font-semibold">autonomous multi-agent AI systems</span> and <span className="text-foreground font-semibold">full-stack systems</span>. Currently focused on developing intelligent workflows, retrieval pipelines, and developer tools that solve practical real-world problems.
           </motion.p>
 
           <motion.div
@@ -74,11 +74,11 @@ export function Hero() {
               className="group relative inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-foreground text-background text-sm font-semibold hover:scale-[1.02] transition-transform"
             >
               View Projects
-              <span className="transition-transform group-hover:translate-x-0.5">→</span>
+              <span>→</span>
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full glass border border-white/10 hover:border-[var(--glow)]/60 hover:bg-black/60 hover:text-[var(--glow)] hover:shadow-[inset_0_4px_8px_rgba(0,0,0,0.9),0_0_15px_color-mix(in_oklab,var(--glow)_25%,transparent)] hover:translate-y-[1px] text-sm font-medium transition-all duration-300 text-white"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full glass border-none ring-1 ring-white/10 hover:ring-[var(--glow)]/60 hover:bg-black/60 hover:text-[var(--glow)] hover:shadow-[inset_0_4px_8px_rgba(0,0,0,0.9),0_0_15px_color-mix(in_oklab,var(--glow)_25%,transparent)] hover:translate-y-[1px] text-sm font-medium transition-all duration-300 text-white"
             >
               Let's Talk
             </a>
@@ -93,7 +93,7 @@ export function Hero() {
               href="https://github.com/Phantom-TA"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full glass border-white/10 hover:border-[var(--glow)]/60 hover:bg-black/60 hover:text-[var(--glow)] hover:shadow-[inset_0_4px_8px_rgba(0,0,0,0.9),0_0_15px_color-mix(in_oklab,var(--glow)_25%,transparent)] hover:translate-y-[1px] text-sm font-medium transition-all duration-300 text-white"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full glass border-none ring-1 ring-white/10 hover:ring-[var(--glow)]/60 hover:bg-black/60 hover:text-[var(--glow)] hover:shadow-[inset_0_4px_8px_rgba(0,0,0,0.9),0_0_15px_color-mix(in_oklab,var(--glow)_25%,transparent)] hover:translate-y-[1px] text-sm font-medium transition-all duration-300 text-white"
             >
               <svg className="size-4 fill-current" viewBox="0 0 24 24">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -104,7 +104,7 @@ export function Hero() {
               href="https://www.linkedin.com/in/tushar-agrawal-774885261/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full glass border-white/10 hover:border-[var(--glow)]/60 hover:bg-black/60 hover:text-[var(--glow)] hover:shadow-[inset_0_4px_8px_rgba(0,0,0,0.9),0_0_15px_color-mix(in_oklab,var(--glow)_25%,transparent)] hover:translate-y-[1px] text-sm font-medium transition-all duration-300 text-white"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full glass border-none ring-1 ring-white/10 hover:ring-[var(--glow)]/60 hover:bg-black/60 hover:text-[var(--glow)] hover:shadow-[inset_0_4px_8px_rgba(0,0,0,0.9),0_0_15px_color-mix(in_oklab,var(--glow)_25%,transparent)] hover:translate-y-[1px] text-sm font-medium transition-all duration-300 text-white"
             >
               <svg className="size-4 fill-current" viewBox="0 0 24 24">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -115,7 +115,7 @@ export function Hero() {
               href="https://leetcode.com/u/Tushar_ag08/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full glass border-white/10 hover:border-[var(--glow)]/60 hover:bg-black/60 hover:text-[var(--glow)] hover:shadow-[inset_0_4px_8px_rgba(0,0,0,0.9),0_0_15px_color-mix(in_oklab,var(--glow)_25%,transparent)] hover:translate-y-[1px] text-sm font-medium transition-all duration-300 text-white"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full glass border-none ring-1 ring-white/10 hover:ring-[var(--glow)]/60 hover:bg-black/60 hover:text-[var(--glow)] hover:shadow-[inset_0_4px_8px_rgba(0,0,0,0.9),0_0_15px_color-mix(in_oklab,var(--glow)_25%,transparent)] hover:translate-y-[1px] text-sm font-medium transition-all duration-300 text-white"
             >
               <svg className="size-4 fill-current" viewBox="0 0 24 24">
                 <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
@@ -126,7 +126,7 @@ export function Hero() {
         </div>
 
         {/* RIGHT — floating widgets */}
-        <div className="relative h-[560px] hidden lg:block">
+        <div className="relative h-[510px] hidden lg:block">
           <div className="absolute top-10 right-10 size-72 rounded-full bg-[var(--glow)]/20 blur-[80px]" />
           <div className="absolute bottom-10 left-0 size-60 rounded-full bg-fuchsia-500/10 blur-[80px]" />
 
@@ -135,7 +135,7 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="absolute top-0 right-0 w-[340px] h-[420px] rounded-3xl glass overflow-hidden noise"
+            className="absolute top-0 right-0 w-[340px] h-[390px] rounded-3xl glass overflow-hidden noise"
           >
             <img
               src={tusharAsset}
@@ -191,7 +191,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="absolute top-[405px] right-6 w-[280px] rounded-2xl glass p-4 animate-float"
+            className="absolute top-[375px] right-6 w-[280px] rounded-2xl glass p-4 animate-float"
             style={{ animationDelay: "3s" }}
           >
             <div className="text-[10px] font-mono uppercase tracking-[0.22em] text-muted-foreground">

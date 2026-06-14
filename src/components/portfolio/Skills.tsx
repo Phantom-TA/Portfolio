@@ -35,28 +35,22 @@ export function Skills() {
       <div className="relative mx-auto max-w-6xl px-6">
         <SectionHeader eyebrow="03 / Skills" title="The stack I" italic="reach for." />
 
-        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 border-t border-l border-white/10">
           {categories.map((cat, i) => (
             <motion.div
               key={cat.label}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: i * 0.06 }}
-              className="group relative rounded-2xl glass p-6 hover:-translate-y-1 transition-all duration-500"
+              transition={{ duration: 0.6, delay: i * 0.05 }}
+              className="group relative p-8 border-r border-b border-white/10 hover:bg-white/[0.015] transition-colors duration-300"
             >
-              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{
-                  background: "radial-gradient(400px circle at var(--mx,50%) var(--my,50%), color-mix(in oklab, var(--glow) 12%, transparent), transparent 50%)",
-                }}
-              />
               <div className="flex items-center justify-between">
                 <div className="text-xs font-mono uppercase tracking-[0.22em] text-muted-foreground">
                   / 0{i + 1}
                 </div>
-                <div className="size-1.5 rounded-full bg-[var(--glow)]/60 group-hover:bg-[var(--glow)] transition-colors" />
               </div>
-              <h3 className="mt-4 font-display text-2xl">{cat.label}</h3>
+              <h3 className="mt-4 font-display text-2xl font-semibold text-white">{cat.label}</h3>
               <div className="mt-5 flex flex-wrap gap-1.5">
                 {cat.skills.map((s) => (
                   <span

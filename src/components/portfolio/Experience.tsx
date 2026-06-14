@@ -60,24 +60,22 @@ export function Experience() {
                 </div>
 
                 <div className="pl-12 md:pl-0 group">
-                  <div className="rounded-2xl glass p-6 hover:border-[var(--glow)]/30 transition-all duration-500 hover:-translate-y-1">
-                    <div className="text-xs font-mono uppercase tracking-[0.22em] text-[var(--glow)]/80">
-                      {exp.company}
-                    </div>
-                    <h3 className="mt-2 font-display text-3xl">{exp.role}</h3>
-                    <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-                      {exp.description}
-                    </p>
-                    <div className="mt-5 flex flex-wrap gap-1.5">
-                      {exp.stack.map((s) => (
-                        <span
-                          key={s}
-                          className="px-2.5 py-1 rounded-md text-[10px] font-mono uppercase tracking-[0.14em] bg-white/5 border border-white/5 text-muted-foreground"
-                        >
-                          {s}
-                        </span>
-                      ))}
-                    </div>
+                  <div className="text-xs font-mono uppercase tracking-[0.22em] text-[var(--glow)]/80">
+                    {exp.company}
+                  </div>
+                  <h3 className="mt-1 font-display text-3xl">{exp.role}</h3>
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                    {exp.description}
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-1.5">
+                    {exp.stack.map((s) => (
+                      <span
+                        key={s}
+                        className="px-2.5 py-1 rounded-md text-[10px] font-mono uppercase tracking-[0.14em] bg-white/5 border border-white/5 text-muted-foreground"
+                      >
+                        {s}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </motion.div>
@@ -113,10 +111,10 @@ export function SectionHeader({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="font-display text-5xl md:text-7xl leading-[0.95] tracking-tight text-gradient"
+        className="font-display text-5xl md:text-7xl font-bold leading-[0.95] tracking-tight text-white"
       >
         {title}
-        {italic && <> <span className="italic text-foreground/60">{italic}</span></>}
+        {italic && <> <span className="text-white/60 font-medium">{italic}</span></>}
       </motion.h2>
     </div>
   );
