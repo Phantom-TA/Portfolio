@@ -16,7 +16,7 @@ export function Projects() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 size-[700px] rounded-full bg-[var(--glow)]/8 blur-[140px] pointer-events-none" />
 
       <div className="relative mx-auto max-w-7xl px-6">
-        <SectionHeader eyebrow="02 / Selected Work" title="Things built" italic="with intent." />
+        <SectionHeader eyebrow="02 / Projects" title="Things built" italic="with intent." />
 
         <div className="mt-24 space-y-32">
           <AnimatePresence initial={false}>
@@ -77,7 +77,7 @@ function ProjectShowcase({ project, flipped }: { project: Project; flipped: bool
       {/* INFO */}
       <div className="space-y-6">
         <div className="text-xs font-mono uppercase tracking-[0.3em] text-muted-foreground">
-          / {project.index} — Case Study
+          / {project.index}
         </div>
         <h3 className="font-display text-5xl md:text-6xl leading-[0.95] tracking-tight">
           {project.title}

@@ -33,7 +33,7 @@ export function Skills() {
     <section id="skills" className="relative py-32 overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-30 pointer-events-none" />
       <div className="relative mx-auto max-w-6xl px-6">
-        <SectionHeader eyebrow="03 / Toolkit" title="The stack I" italic="reach for." />
+        <SectionHeader eyebrow="03 / Skills" title="The stack I" italic="reach for." />
 
         <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {categories.map((cat, i) => (

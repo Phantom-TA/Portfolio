@@ -55,7 +55,7 @@ export function CustomCursor() {
         dotRef.current.style.transform = `translate3d(${dx}px, ${dy}px, 0) translate(-50%, -50%)`;
       }
       if (ringRef.current) {
-        ringRef.current.style.transform = `translate3d(${rx}px, ${ry}px, 0) translate(-50%, -50%) scale(${hovering ? 1.6 : 1})`;
+        ringRef.current.style.transform = `translate3d(${rx}px, ${ry}px, 0) translate(-50%, -50%)`;
       }
       raf = requestAnimationFrame(tick);
     };
@@ -81,11 +81,17 @@ export function CustomCursor() {
     <>
       <style>{`
         a, button, [role="button"], input, textarea, select, label { cursor: none !important; }
+        [data-hover="1"] {
+          background-color: color-mix(in oklab, var(--glow) 8%, transparent) !important;
+          border-color: var(--glow) !important;
+          backdrop-filter: blur(3px) saturate(150%) !important;
+          box-shadow: 0 0 25px 0 color-mix(in oklab, var(--glow) 50%, transparent), inset 0 0 12px color-mix(in oklab, var(--glow) 30%, transparent) !important;
+        }
       `}</style>
       <div
         ref={ringRef}
         data-hover="0"
-        className="pointer-events-none fixed left-0 top-0 z-[9999] size-9 rounded-full border border-[var(--glow)]/60 backdrop-blur-[2px] transition-[width,height,background-color,border-color] duration-300 ease-out mix-blend-difference"
+        className="pointer-events-none fixed left-0 top-0 z-[9999] size-9 rounded-full border border-[var(--glow)]/60 backdrop-blur-[2px] transition-[width,height,background-color,border-color,backdrop-filter,box-shadow] duration-300 ease-out"
         style={{
           willChange: "transform",
           boxShadow: "0 0 18px 0 color-mix(in oklab, var(--glow) 35%, transparent), inset 0 0 8px color-mix(in oklab, var(--glow) 20%, transparent)",

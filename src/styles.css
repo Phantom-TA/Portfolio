@@ -81,6 +81,32 @@
   ::selection { background: color-mix(in oklab, var(--glow) 40%, transparent); color: white; }
 }
 
+/* Custom premium scrollbar matching the glow theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--glow) 20%, transparent) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: color-mix(in oklab, var(--glow) 20%, transparent);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: color-mix(in oklab, var(--glow) 45%, transparent);
+}
+
 @utility noise {
   position: relative;
   &::after {

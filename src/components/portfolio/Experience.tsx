@@ -7,7 +7,7 @@ const experiences = [
     duration: "May 2026 — Present",
     location: "Remote",
     description:
-      "Engineering Tracelens — an AI-assisted frontend performance intelligence platform that automates browser audits, trace analysis and bottleneck detection. Optimizing live gameplay latency on the Jest.com platform.",
+      "Engineered TraceLens, an AI-assisted frontend intelligence platform for browser audits, trace analysis, and bottleneck detection.Contributing to UI systems, debugging workflows, and gameplay performance optimization for live production games on Jest.com.",
     stack: ["Playwright", "Lighthouse", "TypeScript", "Node.js", "CLI", "Perf Eng"],
   },
   {
@@ -16,8 +16,8 @@ const experiences = [
     duration: "Aug 2025 — Present",
     location: "Jaipur, India",
     description:
-      "Leading 7+ science & technology clubs and overseeing PLINTH — LNMIIT's 3-day national tech fest. Heading a team of 100+ members driving strategy, execution and cross-team collaboration for 40+ events and 1,000+ participants.",
-    stack: ["Leadership", "Event Ops", "Strategy", "Cross-team", "Public Speaking"],
+      "Leading 7+ science & technology clubs and overseeing PLINTH, LNMIIT's 3-day national tech fest. Heading a team of 100+ members driving strategy, execution and cross-team collaboration for 40+ events and 1,000+ participants.",
+    stack: ["Leadership", "Event Ops", "Cross-team", "Public Speaking"],
   },
   {
     company: "The LNM Institute of Information Technology",
@@ -25,7 +25,7 @@ const experiences = [
     duration: "July 2023 — June 2027",
     location: "Jaipur, India",
     description:
-      "CGPA 7.63. Coursework across OOP, DSA, DAA, DBMS, OS, Computer Networks and Computer Organization. Class XII (ISC) 96.2% from Rani Laxmibai Public School, Jhansi.",
+      "Coursework across OOP, DSA, DAA, DBMS, OS, Computer Networks and Computer Organization.",
     stack: ["DSA", "OS", "DBMS", "Networks", "OOP", "Python"],
   },
 ];
@@ -48,13 +48,11 @@ export function Experience() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                className={`relative grid md:grid-cols-2 gap-6 md:gap-16 ${
-                  i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
-                }`}
+                className="relative grid md:grid-cols-2 gap-6 md:gap-16"
               >
-                <div className="absolute left-4 md:left-1/2 top-2 -translate-x-1/2 size-3 rounded-full bg-[var(--glow)] glow-ring" />
+                <div className="absolute left-4 md:left-1/2 top-2 -translate-x-1/2 size-3 rounded-full bg-[var(--glow)] glow-ring z-10" />
 
-                <div className={`pl-12 md:pl-0 ${i % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}>
+                <div className="pl-12 md:pl-0 md:text-right md:pr-12">
                   <div className="text-xs font-mono uppercase tracking-[0.22em] text-muted-foreground">
                     {exp.duration}
                   </div>
