@@ -12,7 +12,7 @@ import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Tushar Agrawal — AI Engineer & Full Stack Developer" },
+      { title: "Tushar Agrawal" },
       {
         name: "description",
         content:
