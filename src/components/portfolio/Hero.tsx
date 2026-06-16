@@ -23,7 +23,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full glass text-[11px] uppercase tracking-[0.22em] text-foreground font-bold border-[var(--glow)]/40 shadow-[0_0_15px_rgba(var(--glow),0.1)]"
           >
             <span className="size-1.5 rounded-full bg-[var(--success)] animate-pulse-dot" />
-            Software Engineer (AI) Intern · Voice Games
+            Software Engineer (AI) Intern · <a href="https://www.voicegames.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--glow)] transition-colors">Voice Games</a>
           </motion.div>
 
           <div className="space-y-3">
@@ -61,7 +61,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed"
           >
-             <span className="text-foreground font-semibold">Software Engineer (AI) Intern</span> at <span className="text-foreground font-semibold">Voice Games</span>, building <span className="text-foreground font-semibold">autonomous multi-agent AI systems</span> and <span className="text-foreground font-semibold">full-stack systems</span>. Currently focused on developing intelligent workflows, retrieval pipelines, and developer tools that solve practical real-world problems.
+             <span className="text-foreground font-semibold">Software Engineer (AI) Intern</span> at <a href="https://www.voicegames.ai/" target="_blank" rel="noopener noreferrer" className="text-foreground font-semibold hover:text-[var(--glow)] transition-colors">Voice Games</a>, building <span className="text-foreground font-semibold">autonomous multi-agent AI systems</span> and <span className="text-foreground font-semibold">full-stack systems</span>. Currently focused on developing intelligent workflows, retrieval pipelines, and developer tools that solve practical real-world problems.
           </motion.p>
 
           <motion.div

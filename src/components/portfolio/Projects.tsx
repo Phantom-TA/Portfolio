@@ -84,7 +84,15 @@ function ProjectShowcase({ project, flipped }: { project: Project; flipped: bool
         </h3>
         <p className="text-lg text-foreground/80">{project.tagline}</p>
         <p className="text-sm text-muted-foreground leading-relaxed max-w-lg">
-          {project.description}
+          {project.description.split(/(Voice Games)/g).map((part, idx) => 
+            part === "Voice Games" ? (
+              <a key={idx} href="https://www.voicegames.ai/" target="_blank" rel="noopener noreferrer" className="text-foreground font-semibold hover:text-[var(--glow)] transition-colors">
+                {part}
+              </a>
+            ) : (
+              part
+            )
+          )}
         </p>
 
         <ul className="space-y-2 pt-2">

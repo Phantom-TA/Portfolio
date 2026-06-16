@@ -126,13 +126,13 @@ export function Contact() {
           >
             <a
               href="mailto:tushar08032005@gmail.com"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-none ring-1 ring-white/10 hover:ring-white/30 hover:bg-white/5 text-xs font-mono uppercase tracking-[0.18em] transition-all text-white"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-none ring-1 ring-white/10 hover:ring-white/30 hover:bg-white/5 text-sm font-medium transition-all text-white"
             >
               tushar08032005@gmail.com
             </a>
             <a
               href="tel:+916306263607"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-none ring-1 ring-white/10 hover:ring-white/30 hover:bg-white/5 text-xs font-mono uppercase tracking-[0.18em] transition-all text-white"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-none ring-1 ring-white/10 hover:ring-white/30 hover:bg-white/5 text-sm font-medium transition-all text-white"
             >
               +91 63062 63607
             </a>

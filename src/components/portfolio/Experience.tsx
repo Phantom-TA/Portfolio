@@ -61,7 +61,13 @@ export function Experience() {
 
                 <div className="pl-12 md:pl-0 group">
                   <div className="text-xs font-mono uppercase tracking-[0.22em] text-[var(--glow)]/80">
-                    {exp.company}
+                    {exp.company === "Voice Games" ? (
+                      <a href="https://www.voicegames.ai/" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--glow)] transition-colors">
+                        {exp.company}
+                      </a>
+                    ) : (
+                      exp.company
+                    )}
                   </div>
                   <h3 className="mt-1 font-display text-3xl">{exp.role}</h3>
                   <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
