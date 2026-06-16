@@ -46,10 +46,9 @@ export function Projects() {
               className="group relative inline-flex items-center gap-3 px-7 py-3.5 rounded-full glass border-none ring-1 ring-white/10 hover:ring-[var(--glow)]/50 text-sm font-mono uppercase tracking-[0.22em] transition-all overflow-hidden"
             >
               <span className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,color-mix(in_oklab,var(--glow)_22%,transparent),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <span className="relative size-1.5 rounded-full bg-[var(--glow)] animate-pulse-dot" />
-              <span className="relative">Load more projects</span>
+              <span className="relative">Load more</span>
               <span className="relative text-muted-foreground">
-                {projects.length - visible} more
+                ({projects.length - visible})
               </span>
               <span className="relative transition-transform group-hover:translate-y-0.5">↓</span>
             </motion.button>
