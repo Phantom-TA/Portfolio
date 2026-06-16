@@ -23,6 +23,7 @@ export function Projects() {
             {shown.map((p, i) => (
               <motion.div
                 key={p.id}
+                id={p.id}
                 layout
                 initial={i >= INITIAL ? { opacity: 0, y: 40 } : false}
                 animate={{ opacity: 1, y: 0 }}

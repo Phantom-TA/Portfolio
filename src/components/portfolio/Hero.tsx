@@ -165,24 +165,25 @@ export function Hero() {
           </motion.div>
 
           {/* Currently building */}
-          <motion.div
+          <motion.a
+            href="#echo"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="absolute top-6 left-0 w-[270px] rounded-2xl glass p-4 animate-float"
+            className="absolute top-6 left-0 w-[270px] rounded-2xl glass p-4 animate-float block cursor-pointer transition-all duration-300 hover:ring-[var(--glow)]/30 group/building"
           >
             <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-[0.22em] text-muted-foreground">
               <span className="flex items-center gap-1.5">
                 <span className="size-1.5 rounded-full bg-[var(--glow)] animate-pulse-dot" />
                 Currently Building
               </span>
-              <span>↗</span>
+              <span className="transition-transform duration-300 group-hover/building:translate-x-0.5 group-hover/building:-translate-y-0.5">↗</span>
             </div>
-            <div className="mt-3 font-display text-xl leading-tight">Tracelens</div>
+            <div className="mt-3 font-display text-xl leading-tight">Echo</div>
             <div className="mt-1 text-xs text-muted-foreground leading-relaxed">
-              AI-assisted frontend performance intelligence @ Voice Games
+              Autonomous RAG-grounded AI persona that represents you to recruiters over voice and web chat.
             </div>
-          </motion.div>
+          </motion.a>
 
 
 
@@ -203,15 +204,7 @@ export function Hero() {
 
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.85 }}
-            className="absolute top-44 left-6 rounded-full glass px-3 py-1.5 text-[10px] font-mono uppercase tracking-[0.2em] animate-float"
-            style={{ animationDelay: "2s" }}
-          >
-            Gen. Secretary · Tech Council
-          </motion.div>
+
         </div>
       </div>
     </section>
