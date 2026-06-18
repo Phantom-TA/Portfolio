@@ -33,7 +33,7 @@ export const projects: Project[] = [
     description:
       "A dual-channel AI agent, live voice telephony & web chat ,that represents a developer's full professional profile to recruiters in real time. Embeds resume and GitHub data as 3072-dim vectors into Pinecone, orchestrates GPT-4o Mini across a Vapi voice pipeline (Deepgram Nova-3 STT → ElevenLabs Turbo TTS), and closes the loop with autonomous Cal.com interview booking, all within a sub-1.3s conversational response cycle.",
     highlights: [
-      "RAG pipeline with 3072-dim OpenAI embeddings indexed in Pinecone, achieving 98.2% groundedness on a 33-pair golden Q&A set scored by a GPT-4o judge.",
+      "RAG pipeline with 3072-dim OpenAI embeddings indexed in Pinecone, achieving 95.5% groundedness on a 33-pair golden Q&A set scored by a GPT-4o judge.",
       "Voice pipeline via Vapi · Deepgram Nova-3 STT at 99.1% accuracy · GPT-4o Mini at ~390ms latency · P95 response 1.85s",
       "End-to-end Cal.com booking with 6/6 confirmed test bookings, which is hardened against timezone offset, slot-starvation and webhook routing failures.",
     ],
