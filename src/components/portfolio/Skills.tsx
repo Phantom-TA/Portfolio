@@ -4,7 +4,7 @@ import { SectionHeader } from "./Experience";
 const categories = [
   {
     label: "Languages",
-    skills: ["C", "C++", "JavaScript", "Python"],
+    skills: ["C", "C++", "JavaScript", "Python","TypeScript"],
   },
   {
     label: "Frameworks & Libraries",
